@@ -31,7 +31,8 @@ SECRET_KEY = '5m)c^i*d*wt6ntd^9fwuj5glwvrwc+0*9erq$omwplf7x)h89^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = development
 
-ALLOWED_HOSTS = ['my-simple-django-todo.herokuapp.com', '8080-ffb83a00-aebe-4c3a-92fa-9cc37a9a6dc9.ws-eu01.gitpod.io']
+ALLOWED_HOSTS = [os.environ.get('C9_HOSTNAME'),
+                os.environ.get('HOSTNAME')]
 
 
 # Application definitions
