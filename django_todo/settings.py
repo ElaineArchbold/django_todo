@@ -32,7 +32,7 @@ SECRET_KEY = '5m)c^i*d*wt6ntd^9fwuj5glwvrwc+0*9erq$omwplf7x)h89^'
 DEBUG = development
 
 ALLOWED_HOSTS = [os.environ.get('C9_HOSTNAME'),
-                os.environ.get('HOSTNAME')]
+                 os.environ.get('HOSTNAME')]
 
 
 # Application definitions
